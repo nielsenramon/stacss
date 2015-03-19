@@ -1,0 +1,68 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// Typography
+// =============================================================================
+
+$sans-serif: Helvetica, Arial, sans-serif;
+$serif: Courier, serif;
+$base-font-family: $sans-serif;
+
+$base-font-weight: 300;
+$base-font-weight-bold: 700;
+
+// Colors
+// =============================================================================
+
+// Shades of gray
+
+$black: #101111;
+$gray-darkest: #292c30;
+$gray-darker: #3f4850;
+$gray-dark: #718087;
+$gray: #8e9da5;
+$gray-light: #8e98a4;
+$gray-lighter: #c5ced2;
+$gray-lightest: #f1f1f1;
+$white: #fff;
+
+// Colors
+
+$brand-info: #0477bf;
+$brand-success: #44a65c;
+$brand-danger: #d94343;
+$brand-primary: #b465e1;
+$brand-warning: #f2bb16;
+
+// Font color
+
+$base-font-color: $gray-dark;
+$base-accent-color: $brand-primary;
+$base-accent-highlighted-color: darken($base-accent-color, 15);
+
+// Border color
+
+$base-border-color: $gray-lighter;
+
+// Sizes
+// =============================================================================
+
+// Grid
+
+$columns: 12;
+$max-width: 1140px;
+$gutter: 20px;
+$one-column: 100% / $columns;
+$negative-gutter: 0 - $gutter;
+
+// Font sizes
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+// Box sizes
+
+$base-border-radius: 5px;
+$base-box-shadow: 0 2px 0 darken($gray-lighter, 5);
+$base-transition-speed: .1s;
