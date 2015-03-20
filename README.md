@@ -1,7 +1,7 @@
 stacss
 ======
 
-*The non-obtrusive SCSS framework.*
+*The unobtrusive SCSS framework.*
 
 ## Usage
 
