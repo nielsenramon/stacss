@@ -11,7 +11,9 @@
   box-sizing: border-box;
 }
 
-html { font-size: $base-font-size; }
+html {
+  font-size: $base-font-size;
+}
 
 body {
   margin: 0 auto;
@@ -21,6 +23,9 @@ body {
   line-height: $base-line-height;
   color: $base-font-color;
 }
+
+// Typography
+// =============================================================================
 
 p {
   margin: 0;
@@ -71,30 +76,14 @@ a {
   color: $base-accent-color;
   text-decoration: none;
   transition: color $base-transition-speed linear;
-
   &:hover,
   &:active {
     color: $base-accent-highlighted-color;
   }
-
   &:focus {
     color: $base-accent-highlighted-color;
     outline: none;
   }
-}
-
-hr {
-  margin: 0;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid $base-border-color;
-  border-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0;
 }
 
 abbr,
@@ -115,12 +104,21 @@ cite {
   color: $base-accent-color;
 }
 
-// Selections
+// Other
 // =============================================================================
 
-::-moz-selection {
-  color: $white;
-  background: $brand-primary;
+hr {
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid $base-border-color;
+  border-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
 }
 
 ::selection {

@@ -5,12 +5,36 @@
 // Settings
 // =============================================================================
 
-// Creates widths for each column
+// Creates widths for each column.
 
 @mixin column-generator() {
   @for $i from 1 through ($columns - 1) {
     &.with-#{$i}col {
       width: $one-column * $i;
+    }
+  }
+}
+
+// Creates offsets for columns.
+
+@mixin offset-generator() {
+  @for $i from 1 through ($columns - 1) {
+    &.with-#{$i}off {
+      margin-left: $one-column * $i;
+    }
+  }
+}
+
+// Resets column width to 100%.
+// Resets offsets to a margin-left of 0.
+
+@mixin responsive-grid-generator() {
+  @for $i from 1 through ($columns - 1) {
+    &.with-#{$i}col {
+      width: 100%;
+    }
+    &.with-#{$i}off {
+      margin-left: 0;
     }
   }
 }
@@ -31,6 +55,7 @@
 
 .grid-cell {
   @include column-generator();
+  @include offset-generator();
   display: inline-block;
   width: 100%;
   padding: 0 $gutter;
@@ -38,6 +63,12 @@
   font-size: $base-font-size;
   text-align: left;
   vertical-align: top;
+}
+
+@include breakpoint(small) {
+  .grid-cell {
+    @include responsive-grid-generator();
+  }
 }
 
 // Modifiers

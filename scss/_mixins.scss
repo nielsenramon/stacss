@@ -33,15 +33,15 @@
     @font-face {
       font-family: $font-name;
       src: url($font-filepath-and-name+".eot?#iefix") format("embedded-opentype"),
-           url($font-filepath-and-name+".woff") format("woff"),
-           url($font-filepath-and-name+".ttf")  format("truetype");
-     }
+      url($font-filepath-and-name+".woff") format("woff"),
+      url($font-filepath-and-name+".ttf")  format("truetype");
+    }
   } @else {
     @font-face {
       font-family: $font-name;
-      src: url(asset_path($font-filepath-and-name+".eot?#iefix")) format("embedded-opentype"),
-           url(asset_path($font-filepath-and-name+".woff")) format("woff"),
-           url(asset_path($font-filepath-and-name+".ttf")) format("truetype");
+      src: url($font-filepath-and-name+".eot?#iefix") format("embedded-opentype"),
+      url($font-filepath-and-name+".woff") format("woff"),
+      url($font-filepath-and-name+".ttf") format("truetype");
     }
   }
 }

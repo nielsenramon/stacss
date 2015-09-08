@@ -10,16 +10,18 @@
 // @param {Hex} $font Color for the button type.
 
 @mixin button-generator($background, $font) {
-  background: $background;
   color: $font;
-
+  background: $background;
   &:hover {
     color: $font;
-    background: darken($background, 3);
+    background: lighten($background, 5);
   }
-
-  &:active { background: darken($background, 10); }
-  &:focus { outline: none; }
+  &:focus,
+  &:active {
+    color: $font;
+    background: darken($background, 10);
+    outline: none;
+  }
 }
 
 // Component
@@ -28,10 +30,10 @@
 .button {
   position: relative;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 8px 15px;
   font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  line-height: inherit;
+  font-weight: 600;
+  line-height: 1;
   text-align: center;
   cursor: pointer;
   border: 0;
@@ -39,18 +41,17 @@
   transition: all $base-transition-speed ease-in-out;
   appearance: none;
   user-select: none;
-
   &:disabled,
   &.is-disabled {
-    color: $base-font-color;
+    color: $gray;
     cursor: not-allowed;
-    background: transparent;
-
+    background: $gray-lighter;
     &:hover,
-    &:focus
+    &:focus,
     &:active {
-      color: $base-font-color;
-      background: transparent;
+      color: $gray;
+      background: $gray-lighter;
+      outline: none;
     }
   }
 }
@@ -58,8 +59,18 @@
 // Descendant
 // =============================================================================
 
-.button-default { @include button-generator($gray-lightest, $base-font-color); }
-.button-success { @include button-generator($brand-success, $white); }
-.button-danger { @include button-generator($brand-danger, $white); }
-.button-info { @include button-generator($brand-info, $white); }
-.button-primary { @include button-generator($brand-primary, $white); }
+.button-default {
+  @include button-generator($gray-lightest, $base-font-color);
+}
+.button-success {
+  @include button-generator($brand-success, $white);
+}
+.button-danger {
+  @include button-generator($brand-danger, $white);
+}
+.button-info {
+  @include button-generator($brand-info, $white);
+}
+.button-primary {
+  @include button-generator($brand-primary, $white);
+}
