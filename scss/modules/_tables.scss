@@ -2,24 +2,20 @@
 // Tables
 // =============================================================================
 
-// Component
+// Components
 // =============================================================================
 
 table {
   width: 100%;
   margin: 0;
   border-collapse: collapse;
-  tr,
-  td,
-  th {
-    vertical-align: middle;
-  }
 }
 
 th,
 td {
   padding: 10px;
   text-align: left;
+  vertical-align: middle;
   border: 1px solid $base-border-color;
 }
 
@@ -30,8 +26,12 @@ th {
 // Modifiers
 // =============================================================================
 
+// Wrap you table inside `table-responsive` and the table will be made mobile
+// friendly by enabling horizontal scrolling when content cannot be displayed
+// normally in smaller views.
+
 .table-responsive {
+  display: block;
   width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-x: auto;
 }

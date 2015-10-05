@@ -2,7 +2,7 @@
 // Forms
 // =============================================================================
 
-// Component
+// Components
 // =============================================================================
 
 form {
@@ -55,6 +55,9 @@ textarea {
 
 // Descendant
 // =============================================================================
+
+// Positions your form label and/or input field under each other nicely grouped
+// with correct spacing in between.
 
 .form-item {
   position: relative;

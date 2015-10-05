@@ -5,7 +5,7 @@
 // Settings
 // =============================================================================
 
-// Scaffolding buttons with a given color.
+// Scaffolding alerts with a given color.
 // @param {Hex} $color Color for the button background.
 
 @mixin alert-generator($color) {
@@ -27,14 +27,17 @@
 // Descendant
 // =============================================================================
 
+.alert-danger {
+  @include alert-generator($brand-danger);
+}
 .alert-info {
   @include alert-generator($brand-info);
 }
+.alert-primary {
+  @include alert-generator($brand-primary);
+}
 .alert-success {
   @include alert-generator($brand-success);
-}
-.alert-danger {
-  @include alert-generator($brand-danger);
 }
 .alert-warning {
   @include alert-generator($brand-warning);

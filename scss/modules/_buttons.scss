@@ -6,8 +6,8 @@
 // =============================================================================
 
 // Scaffolding buttons with a given color.
-// @param {Hex} $background Color for the button background.
-// @param {Hex} $font Color for the button type.
+// @param {Hex} $background color for the button background.
+// @param {Hex} $font color for the button text.
 
 @mixin button-generator($background, $font) {
   color: $font;
@@ -62,9 +62,6 @@
 .button-default {
   @include button-generator($gray-lightest, $base-font-color);
 }
-.button-success {
-  @include button-generator($brand-success, $white);
-}
 .button-danger {
   @include button-generator($brand-danger, $white);
 }
@@ -73,4 +70,10 @@
 }
 .button-primary {
   @include button-generator($brand-primary, $white);
+}
+.button-success {
+  @include button-generator($brand-success, $white);
+}
+.button-warning {
+  @include button-generator($brand-warning, $white);
 }

@@ -42,7 +42,7 @@ $base-accent-highlighted-color: darken($base-accent-color, 15);
 
 // Border color
 
-$base-border-color: $gray-lighter;
+$base-border-color: $gray-lightest;
 
 // Sizes
 // =============================================================================
@@ -57,10 +57,10 @@ $negative-gutter: 0 - $gutter;
 
 // Font sizes
 
-$base-font-size: 16px;
+$base-font-size: 14px;
 $base-line-height: 1.6;
 
 // Box sizes
 
 $base-border-radius: 3px;
-$base-transition-speed: .2s;
+$base-transition-speed: .3s;

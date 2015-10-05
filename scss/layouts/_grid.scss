@@ -53,6 +53,10 @@
 // Descendants
 // =============================================================================
 
+// Creates a grid cell. Add `with-[x]co`l to define the number of coloms the
+// cell needs to span. Do not use 'with-[x]col` if you wish to span the entire
+// width.
+
 .grid-cell {
   @include column-generator();
   @include offset-generator();
@@ -73,6 +77,8 @@
 
 // Modifiers
 // =============================================================================
+
+// Centers your grid container with a max-width.
 
 .grid-centered {
   max-width: $max-width;
