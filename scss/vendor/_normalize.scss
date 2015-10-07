@@ -6,21 +6,19 @@
  *    without disabling user zoom.
  */
 
-html
-{
-    font-family: sans-serif; /* 1 */
+html {
+  font-family: sans-serif; /* 1 */
 
-        -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+      -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /**
  * Remove default margin.
  */
 
-body
-{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 /* HTML5 display definitions
@@ -45,9 +43,8 @@ main,
 menu,
 nav,
 section,
-summary
-{
-    display: block;
+summary {
+  display: block;
 }
 
 /**
@@ -58,11 +55,9 @@ summary
 audio,
 canvas,
 progress,
-video
-{
-    display: inline-block; /* 1 */
-
-    vertical-align: baseline; /* 2 */
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -70,11 +65,9 @@ video
  * Remove excess height in iOS 5 devices.
  */
 
-audio:not([controls])
-{
-    display: none;
-
-    height: 0;
+audio:not([controls]) {
+  display: none;
+  height: 0;
 }
 
 /**
@@ -83,9 +76,8 @@ audio:not([controls])
  */
 
 [hidden],
-template
-{
-    display: none;
+template {
+  display: none;
 }
 
 /* Links
@@ -95,9 +87,8 @@ template
  * Remove the gray background color from active links in IE 10.
  */
 
-a
-{
-    background-color: transparent;
+a {
+  background-color: transparent;
 }
 
 /**
@@ -106,9 +97,8 @@ a
  */
 
 a:active,
-a:hover
-{
-    outline: 0;
+a:hover {
+  outline: 0;
 }
 
 /* Text-level semantics
@@ -118,9 +108,8 @@ a:hover
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
-abbr[title]
-{
-    border-bottom: 1px dotted;
+abbr[title] {
+  border-bottom: 1px dotted;
 }
 
 /**
@@ -128,18 +117,16 @@ abbr[title]
  */
 
 b,
-strong
-{
-    font-weight: bold;
+strong {
+  font-weight: bold;
 }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
 
-dfn
-{
-    font-style: italic;
+dfn {
+  font-style: italic;
 }
 
 /**
@@ -147,30 +134,26 @@ dfn
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1
-{
-    font-size: 2em;
-
-    margin: .67em 0;
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
 }
 
 /**
  * Address styling not present in IE 8/9.
  */
 
-mark
-{
-    color: #000;
-    background: #ff0;
+mark {
+  color: #000;
+  background: #ff0;
 }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 
-small
-{
-    font-size: 80%;
+small {
+  font-size: 80%;
 }
 
 /**
@@ -178,24 +161,19 @@ small
  */
 
 sub,
-sup
-{
-    font-size: 75%;
-    line-height: 0;
-
-    position: relative;
-
-    vertical-align: baseline;
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
-sup
-{
-    top: -.5em;
+sup {
+  top: -.5em;
 }
 
-sub
-{
-    bottom: -.25em;
+sub {
+  bottom: -.25em;
 }
 
 /* Embedded content
@@ -205,18 +183,16 @@ sub
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img
-{
-    border: 0;
+img {
+  border: 0;
 }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
 
-svg:not(:root)
-{
-    overflow: hidden;
+svg:not(:root) {
+  overflow: hidden;
 }
 
 /* Grouping content
@@ -226,28 +202,25 @@ svg:not(:root)
  * Address margin not present in IE 8/9 and Safari.
  */
 
-figure
-{
-    margin: 1em 40px;
+figure {
+  margin: 1em 40px;
 }
 
 /**
  * Address differences between Firefox and other browsers.
  */
 
-hr
-{
-    box-sizing: content-box;
-    height: 0;
+hr {
+  height: 0;
+  box-sizing: content-box;
 }
 
 /**
  * Contain overflow in all browsers.
  */
 
-pre
-{
-    overflow: auto;
+pre {
+  overflow: auto;
 }
 
 /**
@@ -257,10 +230,9 @@ pre
 code,
 kbd,
 pre,
-samp
-{
-    font-family: monospace, monospace;
-    font-size: 1em;
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 /* Forms
@@ -282,22 +254,18 @@ button,
 input,
 optgroup,
 select,
-textarea
-{
-    font: inherit; /* 2 */
-
-    margin: 0; /* 3 */
-
-    color: inherit; /* 1 */
+textarea {
+  margin: 0; /* 3 */
+  font: inherit; /* 2 */
+  color: inherit; /* 1 */
 }
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
-button
-{
-    overflow: visible;
+button {
+  overflow: visible;
 }
 
 /**
@@ -308,9 +276,8 @@ button
  */
 
 button,
-select
-{
-    text-transform: none;
+select {
+  text-transform: none;
 }
 
 /**
@@ -322,14 +289,13 @@ select
  */
 
 button,
-html input[type='button'],
+html input[type="button"],
 /* 1 */
-input[type='reset'],
-input[type='submit']
-{
-    cursor: pointer; /* 3 */
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer; /* 3 */
 
-    -webkit-appearance: button; /* 2 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -337,9 +303,8 @@ input[type='submit']
  */
 
 button[disabled],
-html input[disabled]
-{
-    cursor: default;
+html input[disabled] {
+  cursor: default;
 }
 
 /**
@@ -347,11 +312,9 @@ html input[disabled]
  */
 
 button::-moz-focus-inner,
-input::-moz-focus-inner
-{
-    padding: 0;
-
-    border: 0;
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 /**
@@ -359,9 +322,8 @@ input::-moz-focus-inner
  * the UA stylesheet.
  */
 
-input
-{
-    line-height: normal;
+input {
+  line-height: normal;
 }
 
 /**
@@ -372,11 +334,10 @@ input
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-input[type='checkbox'],
-input[type='radio']
-{
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0; /* 2 */
+  box-sizing: border-box; /* 1 */
 }
 
 /**
@@ -385,10 +346,9 @@ input[type='radio']
  * decrement button to change from `default` to `text`.
  */
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button
-{
-    height: auto;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
 }
 
 /**
@@ -396,11 +356,10 @@ input[type='number']::-webkit-outer-spin-button
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 
-input[type='search']
-{
-    box-sizing: content-box; /* 2 */
+input[type="search"] {
+  box-sizing: content-box; /* 2 */
 
-    -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: textfield; /* 1 */
 }
 
 /**
@@ -409,22 +368,19 @@ input[type='search']
  * padding (and `textfield` appearance).
  */
 
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration
-{
-    -webkit-appearance: none;
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
 
 /**
  * Define consistent border, margin, and padding.
  */
 
-fieldset
-{
-    margin: 0 2px;
-    padding: .35em .625em .75em;
-
-    border: 1px solid #c0c0c0;
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
 }
 
 /**
@@ -432,20 +388,17 @@ fieldset
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
-legend
-{
-    padding: 0; /* 2 */
-
-    border: 0; /* 1 */
+legend {
+  padding: 0; /* 2 */
+  border: 0; /* 1 */
 }
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
-textarea
-{
-    overflow: auto;
+textarea {
+  overflow: auto;
 }
 
 /**
@@ -453,9 +406,8 @@ textarea
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 
-optgroup
-{
-    font-weight: bold;
+optgroup {
+  font-weight: bold;
 }
 
 /* Tables
@@ -465,14 +417,12 @@ optgroup
  * Remove most spacing between table cells.
  */
 
-table
-{
-    border-spacing: 0;
-    border-collapse: collapse;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
-th
-{
-    padding: 0;
+th {
+  padding: 0;
 }
