@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title></title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nielsen Ramon">
+
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:image" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Inconsolata:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/docs.css">
+</head>
+<body>
+  <header>
+  <div class="grid grid-centered">
+    <div class="grid-cell is-centered">
+      <nav class="navigation">
+        <a href="" class="navigation-logo" title="STACSS">
+          <img src="../assets/images/logo.png">
+        </a>
+        <ul class="navigation-links">
+          <li>
+            <a href="elements" title="Elements">Elements</a>
+          </li>
+          <!-- <li>
+            <a href="#">Snippets</a>
+          </li> -->
+          <li>
+            <a href="https://github.com/nielsenramon/stacss" title="GitHub" target="_blank">Github</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+  <main role="main">
+    <section>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h4 class="element-title">Base.scss</h4>
+      <h6 class="element-subtitle">Headings</h6>
+      <h1>h1 heading</h1>
+      <h2>h2 heading</h2>
+      <h3>h3 heading</h3>
+      <h4>h4 heading</h4>
+      <h5>h5 heading</h5>
+      <h6>h6 heading</h6>
+      <h6 class="element-subtitle">Paragraphs</h6>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h6 class="element-subtitle">Links</h6>
+      <a href="#">Pretty cool link</a>
+      <h6 class="element-subtitle">Unordered list</h6>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+      <h6 class="element-subtitle">Ordered list</h6>
+      <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ol>
+      <h6 class="element-subtitle">Acronyms</h6>
+      <p>
+        I love writing <abbr title="Cascading Style Sheets">CSS</abbr>.
+      </p>
+      <h6 class="element-subtitle">Blockquotes</h6>
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h4 class="element-title">Buttons.scss</h4>
+      <h6 class="element-subtitle">Normal states</h6>
+      <a href="#" class="button button-default">Default</a>
+      <a href="#" class="button button-danger">Danger</a>
+      <a href="#" class="button button-primary">Primary</a>
+      <a href="#" class="button button-success">Success</a>
+      <a href="#" class="button button-warning">Warning</a>
+      <h6 class="element-subtitle">Disabled states</h6>
+      <a href="#" class="button button-default is-disabled">Default</a>
+      <a href="#" class="button button-danger is-disabled">Danger</a>
+      <a href="#" class="button button-primary is-disabled">Primary</a>
+      <a href="#" class="button button-success is-disabled">Success</a>
+      <a href="#" class="button button-warning is-disabled">Warning</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h4 class="element-title with-margin">Flashes.scss</h4>
+      <div class="flash flash-danger">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      <div class="flash flash-primary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      <div class="flash flash-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      <div class="flash flash-warning">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h4 class="element-title with-margin">Forms.scss</h4>
+      <form>
+        <fieldset>
+          <div class="form-item">
+            <label>Form input</label>
+            <input />
+          </div>
+          <div class="form-item">
+            <label>Disabled form input</label>
+            <input disabled />
+          </div>
+          <div class="form-item">
+            <label>Textarea</label>
+            <textarea></textarea>
+          </div>
+          <div class="form-item">
+            <label>Select box</label>
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label>Checkboxes</label>
+            <input type="checkbox" name="checkbox_name" value="value_one">Checkbox 1
+            <br>
+            <input type="checkbox" name="checkbox_name" value="value_two">Checkbox 2
+            <br>
+            <input type="checkbox" name="checkbox_name" value="value_three">Checkbox 3
+          </div>
+          <div class="form-item">
+            <label>Radio buttons</label>
+            <input type="radio" name="radio_name" value="value_one" checked>Radio 1
+            <br>
+            <input type="radio" name="radio_name" value="value_two">Radio 2
+            <br>
+            <input type="radio" name="radio_name" value="value_three">Radio 3
+          </div>
+          <div class="form-item">
+            <label>File input</label>
+            <input type="file" class="file" name="file">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h4 class="element-title with-margin">Tables.scss</h4>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Table header 1</th>
+              <th>Table header 2</th>
+              <th>Table header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Column 1</td>
+              <td>Column 1</td>
+              <td>Column 1</td>
+            </tr>
+            <tr>
+              <td>Column 1</td>
+              <td>Column 1</td>
+              <td>Column 1</td>
+            </tr>
+            <tr>
+              <td>Column 1</td>
+              <td>Column 1</td>
+              <td>Column 1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <a href="http://nielsenramon.com" target="_blank">Made by Nielsen Ramon</a>
+      <iframe src="https://ghbtns.com/github-btn.html?user=nielsenramon&repo=stacss&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-28631876-4','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

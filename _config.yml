@@ -1,0 +1,17 @@
+permalink: pretty
+
+exclude:
+  - .scss-lint.yml
+  - .csscomb.json
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+source: docs
+url: http://nielsenramon.com/stacss
+
+ga_analytics: UA-28631876-4
+
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed

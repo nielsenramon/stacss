@@ -1,44 +1,41 @@
 // =============================================================================
-// Alerts
+// Flashes
 // =============================================================================
 
 // Settings
 // =============================================================================
 
-// Scaffolding alerts with a given color.
+// Scaffolding flashes with a given color.
 // @param {Hex} $color Color for the button background.
 
-@mixin alert-generator($color) {
+@mixin flash-generator($color) {
+  color: $color;
   background: lighten($color, 40);
-  border-color: lighten($color, 30);
 }
 
 // Component
 // =============================================================================
 
-.alert {
+.flash {
   display: inline-block;
   width: 100%;
   padding: 20px;
-  border: 1px solid $base-border-color;
+  font-weight: $base-font-weight-bold;
   border-radius: $base-border-radius;
 }
 
 // Descendant
 // =============================================================================
 
-.alert-danger {
-  @include alert-generator($brand-danger);
+.flash-danger {
+  @include flash-generator($brand-danger);
 }
-.alert-info {
-  @include alert-generator($brand-info);
+.flash-primary {
+  @include flash-generator($brand-primary);
 }
-.alert-primary {
-  @include alert-generator($brand-primary);
+.flash-success {
+  @include flash-generator($brand-success);
 }
-.alert-success {
-  @include alert-generator($brand-success);
-}
-.alert-warning {
-  @include alert-generator($brand-warning);
+.flash-warning {
+  @include flash-generator($brand-warning);
 }

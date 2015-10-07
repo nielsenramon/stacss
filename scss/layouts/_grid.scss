@@ -67,6 +67,15 @@
   font-size: $base-font-size;
   text-align: left;
   vertical-align: top;
+  &.is-centered {
+    text-align: center;
+  }
+  &.is-right {
+    text-align: right;
+  }
+  &.is-middle {
+    vertical-align: middle;
+  }
 }
 
 @include breakpoint(small) {

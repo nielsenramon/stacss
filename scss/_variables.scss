@@ -8,31 +8,30 @@
 $sans-serif: Helvetica, Arial, sans-serif;
 $serif: Courier, serif;
 $base-font-family: $sans-serif;
-$base-font-weight: 300;
-$base-font-weight-bold: 600;
+$base-font-weight: 400;
+$base-font-weight-bold: 700;
 
 // Colors
 // =============================================================================
 
 // Shades of gray
 
-$black: #101111;
-$gray-darkest: #292c30;
-$gray-darker: #3f4850;
-$gray-dark: #718087;
-$gray: #8e9da5;
-$gray-light: #8e98a4;
-$gray-lighter: #c5ced2;
-$gray-lightest: #f1f1f1;
+$black: #000;
+$gray-darkest: #121111;
+$gray-darker: lighten($gray-darkest, 15);
+$gray-dark: lighten($gray-darkest, 30);
+$gray: lighten($gray-darkest, 45);
+$gray-light: lighten($gray-darkest, 60);
+$gray-lighter: lighten($gray-darkest, 75);
+$gray-lightest: lighten($gray-darkest, 85);
 $white: #fff;
 
 // Colors
 
-$brand-info: #0477bf;
-$brand-success: #44a65c;
-$brand-danger: #d94343;
-$brand-primary: #b465e1;
-$brand-warning: #f2bb16;
+$brand-success: #1fbf92;
+$brand-danger: #e74b3c;
+$brand-primary: #3088bf;
+$brand-warning: #f1c90b;
 
 // Font color
 
@@ -57,10 +56,10 @@ $negative-gutter: 0 - $gutter;
 
 // Font sizes
 
-$base-font-size: 14px;
+$base-font-size: 16px;
 $base-line-height: 1.6;
 
 // Box sizes
 
-$base-border-radius: 3px;
-$base-transition-speed: .3s;
+$base-border-radius: 1px;
+$base-transition-speed: .2s;
