@@ -3,3 +3,4 @@
 *.sass-cache
 .ruby-version
 .jekyll-metadata
+_site/

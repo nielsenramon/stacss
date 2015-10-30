@@ -3,6 +3,7 @@ permalink: pretty
 exclude:
   - .scss-lint.yml
   - .csscomb.json
+  - .jekyll-metadata
   - Gemfile
   - Gemfile.lock
   - README.md
