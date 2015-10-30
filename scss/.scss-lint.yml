@@ -28,3 +28,6 @@ linters:
   EmptyLineBetweenBlocks:
     enabled: false
     ignore_single_line_blocks: true
+
+  QualifyingElement:
+    allow_element_with_attribute: true

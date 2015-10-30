@@ -26,14 +26,14 @@ $gray-lighter: lighten($gray-darkest, 75);
 $gray-lightest: lighten($gray-darkest, 85);
 $white: #fff;
 
-// Colors
+// Brand colors
 
 $brand-success: #1fbf92;
 $brand-danger: #e74b3c;
 $brand-primary: #3088bf;
 $brand-warning: #f1c90b;
 
-// Font color
+// Font colors
 
 $base-font-color: $gray-dark;
 $base-accent-color: $brand-primary;
@@ -62,4 +62,8 @@ $base-line-height: 1.6;
 // Box sizes
 
 $base-border-radius: 1px;
+
+// Effects
+// =============================================================================
+
 $base-transition-speed: .2s;

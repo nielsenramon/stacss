@@ -78,19 +78,19 @@
   }
 }
 
-@include breakpoint(small) {
-  .grid-cell {
-    @include responsive-grid-generator();
-  }
-}
-
-// Modifiers
-// =============================================================================
-
 // Centers your grid container with a max-width.
 
 .grid-centered {
   max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .grid-cell {
+    @include responsive-grid-generator();
+  }
 }

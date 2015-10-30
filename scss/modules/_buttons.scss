@@ -11,26 +11,26 @@
 
 @mixin button-generator($background, $font) {
   color: $font;
-  background: $background;
+  background-color: $background;
   &:hover {
     color: $font;
-    background: lighten($background, 5);
+    background-color: lighten($background, 5);
   }
   &:focus,
   &:active {
     color: $font;
-    background: darken($background, 10);
+    background-color: darken($background, 10);
     outline: none;
   }
   &:disabled,
   &.is-disabled {
     color: lighten($font, 10);
-    background: lighten($background, 30);
+    background-color: lighten($background, 30);
     &:hover,
     &:focus,
     &:active {
       color: lighten($font, 10);
-      background: lighten($background, 30);
+      background-color: lighten($background, 30);
     }
   }
 }
@@ -63,21 +63,27 @@
   }
 }
 
-// Descendant
+// Descendants
 // =============================================================================
+
+// Basic generated buttons
 
 .button-default {
   @include button-generator($gray-lightest, $base-font-color);
 }
+
 .button-danger {
   @include button-generator($brand-danger, $white);
 }
+
 .button-primary {
   @include button-generator($brand-primary, $white);
 }
+
 .button-success {
   @include button-generator($brand-success, $white);
 }
+
 .button-warning {
   @include button-generator($brand-warning, $white);
 }

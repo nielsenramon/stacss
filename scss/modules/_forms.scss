@@ -16,7 +16,7 @@ fieldset {
   min-width: 100%;
   padding: 20px;
   margin: 0;
-  background: $gray-lightest;
+  background-color: $gray-lightest;
   border: 1px solid $base-border-color;
   border-radius: $base-border-radius;
 }
@@ -83,7 +83,7 @@ input[type="file"] {
   width: 100%;
 }
 
-// Descendant
+// Descendants
 // =============================================================================
 
 // Positions your form label and/or input field under each other nicely grouped
