@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ""
-description: ""
+title: "Elements"
+description: "The unobstrusive SASS framework"
 ---
 
 <section>
@@ -55,12 +55,8 @@ description: ""
       <a href="#" class="button button-primary">Primary</a>
       <a href="#" class="button button-success">Success</a>
       <a href="#" class="button button-warning">Warning</a>
-      <h6 class="element-subtitle">Disabled states</h6>
-      <a href="#" class="button button-default is-disabled">Default</a>
-      <a href="#" class="button button-danger is-disabled">Danger</a>
-      <a href="#" class="button button-primary is-disabled">Primary</a>
-      <a href="#" class="button button-success is-disabled">Success</a>
-      <a href="#" class="button button-warning is-disabled">Warning</a>
+      <h6 class="element-subtitle">Disabled state</h6>
+      <a href="#" class="button button-default is-disabled">Disabled button</a>
     </div>
   </div>
 </section>
@@ -171,5 +167,57 @@ description: ""
         </table>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h4 class="element-title">Grid.scss</h4>
+      <h6 class="element-subtitle">Default grid</h6>
+    </div>
+  </div>
+  <div class="grid grid-centered element-grid">
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+    <div class="grid-cell with-1col"><p>1</p></div>
+
+    <div class="grid-cell with-2col"><p>2</p></div>
+    <div class="grid-cell with-2col"><p>2</p></div>
+    <div class="grid-cell with-2col"><p>2</p></div>
+    <div class="grid-cell with-2col"><p>2</p></div>
+    <div class="grid-cell with-2col"><p>2</p></div>
+    <div class="grid-cell with-2col"><p>2</p></div>
+
+    <div class="grid-cell with-3col"><p>3</p></div>
+    <div class="grid-cell with-3col"><p>3</p></div>
+    <div class="grid-cell with-3col"><p>3</p></div>
+    <div class="grid-cell with-3col"><p>3</p></div>
+
+    <div class="grid-cell with-4col"><p>4</p></div>
+    <div class="grid-cell with-4col"><p>4</p></div>
+    <div class="grid-cell with-4col"><p>4</p></div>
+
+    <div class="grid-cell with-6col no-margin"><p>6</p></div>
+    <div class="grid-cell with-6col no-margin"><p>6</p></div>
+  </div>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <h6 class="element-subtitle">Vertical align</h6>
+    </div>
+  </div>
+  <div class="grid grid-centered element-grid">
+    <div class="grid-cell with-4col is-top no-margin"><p>top</p></div>
+    <div class="grid-cell with-4col is-middle no-margin"><p>middle</p></div>
+    <div class="grid-cell with-4col is-bottom no-margin"><p>bottom</p></div>
   </div>
 </section>

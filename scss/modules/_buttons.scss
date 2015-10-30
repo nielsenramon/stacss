@@ -22,17 +22,6 @@
     background-color: darken($background, 10);
     outline: none;
   }
-  &:disabled,
-  &.is-disabled {
-    color: lighten($font, 10);
-    background-color: lighten($background, 30);
-    &:hover,
-    &:focus,
-    &:active {
-      color: lighten($font, 10);
-      background-color: lighten($background, 30);
-    }
-  }
 }
 
 // Component
@@ -54,10 +43,14 @@
   user-select: none;
   &:disabled,
   &.is-disabled {
+    color: $gray-light;
     cursor: not-allowed;
+    background-color: $gray-lightest;
     &:hover,
     &:focus,
     &:active {
+      color: $gray-light;
+      background-color: $gray-lightest;
       outline: none;
     }
   }

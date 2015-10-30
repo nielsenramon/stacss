@@ -84,7 +84,7 @@ header {
 .intro-link {
   display: inline-block;
   padding: 10px 50px;
-  margin-right: 15px;
+  margin-left: 15px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .15em;
@@ -140,6 +140,14 @@ header {
     font-size: 16px;
     font-weight: 500;
     color: $gray-light;
+    a {
+      color: $gray-dark;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $gray-darkest;
+      }
+    }
   }
 }
 
@@ -175,7 +183,7 @@ header {
     font-size: 14px;
     font-weight: 500;
     line-height: 2;
-    color: $gray-darker;
+    color: $gray-dark;
     text-align: left;
     background: $gray-lightest;
     border-radius: 1px;
@@ -231,6 +239,26 @@ footer {
   text-transform: uppercase;
 }
 
+.element-grid {
+  .grid-cell {
+    margin-bottom: $gutter * 2;
+    &.no-margin {
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+      padding: 20px 10px;
+      color: $gray;
+      text-align: center;
+      background: $gray-lightest;
+      border-radius: $base-border-radius;
+    }
+    &.is-middle p {
+      padding: 40px 10px;
+    }
+  }
+}
+
 // Responsive
 // =============================================================================
 
@@ -255,5 +283,28 @@ footer {
   }
   .info {
     padding: 25px 0 75px;
+  }
+  .intro-title {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+  .intro-subtitle {
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .grid-cell.intro-center {
+    text-align: center;
+  }
+  .stats-block {
+    margin-top: 20px;
+    &.is-first {
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 300;
+    }
   }
 }

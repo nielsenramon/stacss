@@ -73,8 +73,14 @@
   &.is-right {
     text-align: right;
   }
+  &.is-top {
+    vertical-align: top;
+  }
   &.is-middle {
     vertical-align: middle;
+  }
+  &.is-bottom {
+    vertical-align: bottom;
   }
 }
 
