@@ -3,7 +3,7 @@ stacss
 
 The unobtrusive SCSS framework.
 
-Stacss is a small SCSS framework that fits any new project. It's intention is to bring you basic stylings you'll need in almost every project which you can continue building upon.
+STACSS is a lightweight structured SASS directory which scaffolds basic styles, variables and indispensable modules.
 
 ### Installation
 
