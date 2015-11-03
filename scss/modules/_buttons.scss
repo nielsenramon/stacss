@@ -11,15 +11,15 @@
 
 @mixin button-generator($background, $font) {
   color: $font;
-  background: $background;
+  background-color: $background;
   &:hover {
     color: $font;
-    background: lighten($background, 5);
+    background-color: lighten($background, 5);
   }
   &:focus,
   &:active {
     color: $font;
-    background: darken($background, 10);
+    background-color: darken($background, 10);
     outline: none;
   }
 }
@@ -30,9 +30,9 @@
 .button {
   position: relative;
   display: inline-block;
-  padding: 8px 15px;
+  padding: 10px 30px;
   font-family: $base-font-family;
-  font-weight: 600;
+  font-weight: $base-font-weight-bold;
   line-height: 1;
   text-align: center;
   cursor: pointer;
@@ -43,37 +43,40 @@
   user-select: none;
   &:disabled,
   &.is-disabled {
-    color: $gray;
+    color: $gray-light;
     cursor: not-allowed;
-    background: $gray-lighter;
+    background-color: $gray-lightest;
     &:hover,
     &:focus,
     &:active {
-      color: $gray;
-      background: $gray-lighter;
+      color: $gray-light;
+      background-color: $gray-lightest;
       outline: none;
     }
   }
 }
 
-// Descendant
+// Descendants
 // =============================================================================
+
+// Basic generated buttons
 
 .button-default {
   @include button-generator($gray-lightest, $base-font-color);
 }
+
 .button-danger {
   @include button-generator($brand-danger, $white);
 }
-.button-info {
-  @include button-generator($brand-info, $white);
-}
+
 .button-primary {
   @include button-generator($brand-primary, $white);
 }
+
 .button-success {
   @include button-generator($brand-success, $white);
 }
+
 .button-warning {
   @include button-generator($brand-warning, $white);
 }

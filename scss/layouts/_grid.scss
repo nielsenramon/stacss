@@ -67,16 +67,22 @@
   font-size: $base-font-size;
   text-align: left;
   vertical-align: top;
-}
-
-@include breakpoint(small) {
-  .grid-cell {
-    @include responsive-grid-generator();
+  &.is-centered {
+    text-align: center;
+  }
+  &.is-right {
+    text-align: right;
+  }
+  &.is-top {
+    vertical-align: top;
+  }
+  &.is-middle {
+    vertical-align: middle;
+  }
+  &.is-bottom {
+    vertical-align: bottom;
   }
 }
-
-// Modifiers
-// =============================================================================
 
 // Centers your grid container with a max-width.
 
@@ -84,4 +90,13 @@
   max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .grid-cell {
+    @include responsive-grid-generator();
+  }
 }

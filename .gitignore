@@ -2,3 +2,5 @@
 *.DS_Store
 *.sass-cache
 .ruby-version
+.jekyll-metadata
+_site/
