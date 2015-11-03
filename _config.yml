@@ -7,12 +7,28 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - bin/*
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+
+  sources:
+    - _assets/images
+    - _assets/stylesheets
+    - ../scss
+
+  js_compressor: uglifier
+  css_compressor: sass
+  gzip: false
+  debug: true
+  cachebust: none
 
 source: docs
-url: http://nielsenramon.com/stacss
+url: http://stacss.nielsenramon.com
 
 ga_analytics: UA-28631876-4
 
-sass:
-  sass_dir: assets/stylesheets
-  style: :compressed
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
