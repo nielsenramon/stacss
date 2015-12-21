@@ -10,19 +10,10 @@ exclude:
   - bin/*
 
 assets:
-  dirname: assets
-  baseurl: /assets/
-
   sources:
+    - ../scss
     - _assets/images
     - _assets/stylesheets
-    - ../scss
-
-  js_compressor: uglifier
-  css_compressor: sass
-  gzip: false
-  debug: true
-  cachebust: none
 
 source: docs
 url: http://stacss.nielsenramon.com
