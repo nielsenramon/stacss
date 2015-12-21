@@ -23,6 +23,7 @@ section {
 
 .grid-centered {
   max-width: 1250px;
+  padding: 0 50px;
 }
 
 // Navigation
@@ -31,7 +32,7 @@ section {
 header {
   display: block;
   padding: 100px 0;
-  background: $gray-lightest;
+  border-bottom: 1px solid $gray-lightest;
 }
 
 .navigation {
@@ -90,8 +91,8 @@ header {
   letter-spacing: .15em;
   color: $white;
   text-transform: uppercase;
-  background: $gray-light;
-  border: 2px solid $gray-light;
+  background: $gray-darker;
+  border: 2px solid $gray-darker;
   border-radius: 1px;
   transition: all $base-transition-speed linear;
   &:hover {
@@ -105,7 +106,7 @@ header {
     outline: none;
   }
   &.is-empty {
-    color: $gray-light;
+    color: $gray-darker;
     background: $white;
     &:hover {
       color: $gray-light;
@@ -204,8 +205,8 @@ footer {
   a {
     display: inline-block;
     font-size: 14px;
-    font-weight: 600;
-    color: $gray-light;
+    font-weight: 400;
+    color: $gray-lighter;
     &:hover,
     &:focus,
     &:active {
@@ -263,6 +264,9 @@ footer {
 // =============================================================================
 
 @include breakpoint(small) {
+  .grid-centered {
+    padding: 0;
+  }
   .navigation {
     text-align: center;
   }
