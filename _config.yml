@@ -1,4 +1,9 @@
-permalink: pretty
+assets:
+  sources:
+    - _assets/images
+    - _assets/stylesheets
+
+baseurl: /
 
 exclude:
   - .scss-lint.yml
@@ -9,15 +14,10 @@ exclude:
   - README.md
   - bin/*
 
-assets:
-  sources:
-    - _assets/images
-    - _assets/stylesheets
-
-url: http://stacss.nielsenramon.com
-
 ga_analytics: UA-28631876-4
 
 gems:
   - jekyll-assets
   - jekyll-sitemap
+
+permalink: pretty
