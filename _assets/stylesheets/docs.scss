@@ -7,7 +7,7 @@
 
 // Typography
 
-$sans-serif: Helvetica, Arial, sans-serif;
+$sans-serif: "Lato", Helvetica, Arial, sans-serif;
 $serif: Courier, serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
@@ -36,7 +36,7 @@ $base-border-color: $gray-lightest;
 // Sizes
 
 $columns: 12;
-$max-width: 1140px;
+$max-width: 1340px;
 $gutter: 20px;
 $one-column: 100% / $columns;
 $negative-gutter: 0 - $gutter;
@@ -68,6 +68,26 @@ $base-transition-speed: .2s;
     @warn "The parameter #{$val} is not valid";
   }
 }
+
+// STACSS import
+// =============================================================================
+
+@import "stacss/vendor/normalize";
+
+// Settings
+
+@import "stacss/base";
+
+// Layouts
+
+@import "stacss/layouts/grid";
+
+// Modules
+
+@import "stacss/modules/buttons";
+@import "stacss/modules/flashes";
+@import "stacss/modules/forms";
+@import "stacss/modules/tables";
 
 // Specific docs styles
 // =============================================================================

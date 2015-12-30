@@ -11,11 +11,9 @@ exclude:
 
 assets:
   sources:
-    - ../scss
     - _assets/images
     - _assets/stylesheets
 
-source: docs
 url: http://stacss.nielsenramon.com
 
 ga_analytics: UA-28631876-4

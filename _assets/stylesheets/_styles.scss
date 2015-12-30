@@ -5,10 +5,6 @@
 // Overrides
 // =============================================================================
 
-main {
-  font-family: "Lato";
-}
-
 section {
   display: block;
   padding: 100px 0;
@@ -22,7 +18,6 @@ section {
 }
 
 .grid-centered {
-  max-width: 1250px;
   padding: 0 50px;
 }
 
@@ -42,7 +37,9 @@ header {
 
 .navigation-logo {
   display: inline-block;
-  width: 100px;
+  img {
+    width: 100px;
+  }
 }
 
 .navigation-links {
@@ -91,18 +88,20 @@ header {
   letter-spacing: .15em;
   color: $white;
   text-transform: uppercase;
-  background: $gray-darker;
-  border: 2px solid $gray-darker;
+  background: $gray-darkest;
+  border: 2px solid $gray-darkest;
   border-radius: 1px;
   transition: all $base-transition-speed linear;
   &:hover {
     color: $white;
-    background: $gray;
+    background: $gray-dark;
+    border-color: $gray-dark;
   }
   &:focus,
   &:active {
     color: $white;
-    border-color: $gray;
+    background: $gray;
+    border-color: $gray-dark;
     outline: none;
   }
   &.is-empty {
@@ -186,7 +185,7 @@ header {
     line-height: 2;
     color: $gray-dark;
     text-align: left;
-    background: $gray-lightest;
+    background: lighten($gray-lightest, 5);
     border-radius: 1px;
     span {
       padding: 2px 4px;
@@ -201,12 +200,11 @@ header {
 
 footer {
   display: block;
-  padding: 25px 0;
+  padding: 50px 0;
   a {
     display: inline-block;
-    font-size: 14px;
     font-weight: 400;
-    color: $gray-lighter;
+    color: $gray-light;
     &:hover,
     &:focus,
     &:active {
@@ -215,6 +213,7 @@ footer {
   }
   iframe {
     float: right;
+    margin-top: 3px;
     text-align: right;
   }
 }
