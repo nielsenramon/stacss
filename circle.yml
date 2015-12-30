@@ -2,6 +2,10 @@ machine:
   ruby:
     version: 2.2.3
 
+dependencies:
+  pre:
+    - bundle install
+
 test:
   post:
     - sass --scss -t compressed scss/application.scss output.css
