@@ -21,3 +21,5 @@ gems:
   - jekyll-sitemap
 
 permalink: pretty
+
+url: http://stacss.nielsenramon.com
