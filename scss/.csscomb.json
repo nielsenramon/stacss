@@ -177,6 +177,7 @@
       "transition-timing-function",
       "background-clip",
       "backface-visibility",
+      "mask-image",
       "fill",
       "resize",
       "appearance",
