@@ -7,6 +7,7 @@
   "eof-newline": true,
   "exclude": ["node_modules/**"],
   "leading-zero": false,
+  "lines-between-rulesets": 1,
   "quotes": "double",
   "remove-empty-rulesets": true,
   "space-after-colon": 1,
@@ -22,7 +23,7 @@
   "strip-spaces": true,
   "tab-size": 2,
   "unitless-zero": true,
-  "vendor-prefix-align": true,
+  "vendor-prefix-align": false,
   "sort-order": [
     [
       "$variable",
