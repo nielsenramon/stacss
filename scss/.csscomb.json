@@ -90,6 +90,7 @@
       "color",
       "text-align",
       "text-decoration",
+      "-webkit-text-decoration-skip",
       "text-indent",
       "text-overflow",
       "text-rendering",
