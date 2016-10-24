@@ -5,7 +5,7 @@
 // Settings
 // =============================================================================
 
-// Creates widths for each column.
+// Create widths for each column.
 
 @mixin column-generator() {
   @for $i from 1 through ($columns - 1) {
@@ -15,7 +15,7 @@
   }
 }
 
-// Creates offsets for columns.
+// Create offsets for columns.
 
 @mixin offset-generator() {
   @for $i from 1 through ($columns - 1) {
@@ -25,8 +25,8 @@
   }
 }
 
-// Resets column width to 100%.
-// Resets offsets to a margin-left of 0.
+// Reset column width to 100%.
+// Reset offsets to a margin-left of 0.
 
 @mixin responsive-grid-generator() {
   @for $i from 1 through ($columns - 1) {
@@ -67,21 +67,6 @@
   font-size: $base-font-size;
   text-align: left;
   vertical-align: top;
-  &.is-centered {
-    text-align: center;
-  }
-  &.is-right {
-    text-align: right;
-  }
-  &.is-top {
-    vertical-align: top;
-  }
-  &.is-middle {
-    vertical-align: middle;
-  }
-  &.is-bottom {
-    vertical-align: bottom;
-  }
 }
 
 // Centers your grid container with a max-width.

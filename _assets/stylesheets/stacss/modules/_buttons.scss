@@ -5,7 +5,7 @@
 // Settings
 // =============================================================================
 
-// Scaffolding buttons with a given color.
+// Scaffold buttons with a given color and background.
 // @param {Hex} $background color for the button background.
 // @param {Hex} $font color for the button text.
 
@@ -21,6 +21,10 @@
     color: $font;
     background-color: darken($background, 10);
     outline: none;
+  }
+  &:disabled {
+    color: $font;
+    background-color: $background;
   }
 }
 
@@ -43,16 +47,8 @@
   user-select: none;
   &:disabled,
   &.is-disabled {
-    color: $gray-light;
     cursor: not-allowed;
-    background-color: $gray-lightest;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $gray-light;
-      background-color: $gray-lightest;
-      outline: none;
-    }
+    opacity: .4;
   }
 }
 
