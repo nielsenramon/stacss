@@ -45,8 +45,7 @@
   transition: all $base-transition-speed ease-in-out;
   appearance: none;
   user-select: none;
-  &:disabled,
-  &.is-disabled {
+  &:disabled {
     cursor: not-allowed;
     opacity: .4;
   }
