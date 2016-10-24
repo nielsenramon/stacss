@@ -67,21 +67,6 @@
   font-size: $base-font-size;
   text-align: left;
   vertical-align: top;
-  &.is-centered {
-    text-align: center;
-  }
-  &.is-right {
-    text-align: right;
-  }
-  &.is-top {
-    vertical-align: top;
-  }
-  &.is-middle {
-    vertical-align: middle;
-  }
-  &.is-bottom {
-    vertical-align: bottom;
-  }
 }
 
 // Centers your grid container with a max-width.

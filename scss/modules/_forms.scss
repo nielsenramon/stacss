@@ -58,14 +58,7 @@ textarea {
   }
   &:disabled {
     cursor: not-allowed;
-    background-color: $gray-lighter;
-    &:hover {
-      border-color: $gray-lighter;
-    }
-    &:active {
-      border-color: $gray-lighter;
-      outline: none;
-    }
+    opacity: .3;
   }
 }
 
