@@ -299,6 +299,9 @@ footer {
   }
   .grid-cell.intro-center {
     text-align: center;
+    .button {
+      width: 120px;
+    }
   }
   .stats-block {
     margin-top: 20px;
