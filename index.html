@@ -1,10 +1,56 @@
----
-layout: default
-title: "The unobtrusive SCSS framework"
-description: "STACSS is a lightweight structured SCSS directory which scaffolds basic styles, variables and indispensable modules."
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<section>
+  <title>STACSS | The unobtrusive SCSS framework</title>
+
+  <meta name="description" content="STACSS is a lightweight structured SCSS directory which scaffolds basic styles, variables and indispensable modules.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nielsen Ramon">
+
+  <meta property="og:title" content="The unobtrusive SCSS framework">
+  <meta property="og:url" content="http://stacss.nielsenramon.com">
+  <meta property="og:description" content="STACSS is a lightweight structured SCSS directory which scaffolds basic styles, variables and indispensable modules.">
+  <meta property="og:site_name" content="STACSS">
+  <meta property="og:image" content="/assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://stacss.nielsenramon.com">
+  <meta name="twitter:title" content="The unobtrusive SCSS framework">
+  <meta name="twitter:description" content="STACSS is a lightweight structured SCSS directory which scaffolds basic styles, variables and indispensable modules.">
+  <meta name="twitter:image" content="/assets/og-image.jpg">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Inconsolata:700' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <link type="text/css" rel="stylesheet" href="/assets/docs.css">
+</head>
+<body>
+  <header>
+  <div class="grid grid-centered">
+    <div class="grid-cell is-centered">
+      <nav class="navigation">
+        <a href="/" class="navigation-logo" title="STACSS">
+          <img src="/assets/logo.png" alt="STACSS">
+        </a>
+        <ul class="navigation-links">
+          <li>
+            <a href="/elements" title="Elements">Elements</a>
+          </li>
+          <li>
+            <a href="https://github.com/nielsenramon/stacss" title="GitHub" target="_blank">Github</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+  <main role="main">
+    <section>
   <div class="grid grid-centered">
     <div class="grid-cell with-6col is-middle">
       <h4 class="intro-title">
@@ -16,7 +62,7 @@ description: "STACSS is a lightweight structured SCSS directory which scaffolds 
     </div>
 
     <div class="grid-cell with-6col is-middle is-right intro-center">
-      <a href="{{site.url}}{% asset_path stacss.zip %}" class="intro-link" onMouseDown="ga('send', 'event', 'download', 'click', 'zip')" title="Download" download>Download</a>
+      <a href="http://stacss.nielsenramon.com/assets/stacss.zip" class="intro-link" onMouseDown="ga('send', 'event', 'download', 'click', 'zip')" title="Download" download>Download</a>
       <a href="http://twitter.com/home?status=The unobtrusive SASS framework http://nielsenramon.com/stacss" class="intro-link is-empty" target="_blank" title="Tweet this">Tweet this</a>
     </div>
   </div>
@@ -124,3 +170,26 @@ description: "STACSS is a lightweight structured SCSS directory which scaffolds 
     </div>
   </div>
 </section>
+
+  </main>
+
+  <footer>
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <a href="http://nielsenramon.com" target="_blank">Crafted by Nielsen Ramon</a>
+      <iframe src="https://ghbtns.com/github-btn.html?user=nielsenramon&repo=stacss&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-28631876-4','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

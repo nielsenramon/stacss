@@ -1,6 +1,0 @@
-java_script:
-  enabled: false
-scss:
-  config_file: scss/.scss-lint.yml
-  enabled: true
-  ignore_file: scss/vendor/_normalize.scss
