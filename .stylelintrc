@@ -7,5 +7,6 @@
     }],
     "declaration-empty-line-before": "never",
     "number-leading-zero": "never",
+    "string-quotes": "double"
   }
 }
