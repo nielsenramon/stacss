@@ -10,11 +10,11 @@ STACSS is a lightweight structured SCSS directory which scaffolds basic styles, 
 
 Copy the contents of `/scss` into your application `scss` folder and you are ready to go!
 
-## Info
+## Optional
 
 Note that STACSS requires [Autoprefixer](https://github.com/postcss/autoprefixer) for optimal use. Installing it inside your project is recommended.
 
-STACSS uses [scss-lint](https://github.com/brigade/scss-lint) to keep the SCSS files clean. Next to that it uses [csscomb](https://github.com/csscomb/csscomb.js) to automatically enforce linting.
+Feel free to add the `.stylelintrc` config file as well. It makes sure your SCSS is linted and it enforces consistent conventions in your stylesheets. More info about Stylelint [here](https://github.com/stylelint/stylelint).
 
 None of the above is required but highly recommended.
 
