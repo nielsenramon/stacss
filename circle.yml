@@ -3,7 +3,8 @@ machine:
     version: 8.2.1
 
 dependencies:
-  override:
+  pre:
+    - npm install yarn
     - yarn
 
 test:
