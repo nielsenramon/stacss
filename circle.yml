@@ -5,8 +5,6 @@ machine:
 dependencies:
   override:
     - yarn
-  cache_directories:
-    - ~/.cache/yarn
 
 test:
   override:
