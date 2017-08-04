@@ -76,10 +76,12 @@ a {
   color: $base-accent-color;
   text-decoration: none;
   transition: color $base-transition-speed linear;
+
   &:hover,
   &:active {
     color: $base-accent-highlighted-color;
   }
+
   &:focus {
     color: $base-accent-highlighted-color;
     outline: none;
