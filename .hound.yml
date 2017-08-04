@@ -1,6 +1,0 @@
-java_script:
-  enabled: false
-
-scss:
-  config_file: .stylelintrc
-  enabled: true
