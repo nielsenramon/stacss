@@ -1,12 +1,11 @@
 machine:
-  ruby:
-    version: 2.3.0
+  node:
+    version: 8.2.1
 
 dependencies:
-  pre:
-    - bundle install
+  override:
+    - yarn
 
 test:
   post:
-    - sass --scss -t compressed scss/application.scss output.css
-    - cd scss && scss-lint
+    - npm run stylelint

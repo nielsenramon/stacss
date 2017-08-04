@@ -10,15 +10,21 @@
     @media all and (max-width: 767px) {
       @content;
     }
-  } @else if $val == medium {
+  }
+
+  @else if $val == medium {
     @media all and (max-width: 1024px) {
       @content;
     }
-  } @else if $val == large {
+  }
+
+  @else if $val == large {
     @media all and (max-width: 1223px) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @warn "The parameter #{$val} is not valid";
   }
 }

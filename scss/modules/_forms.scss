@@ -48,14 +48,17 @@ textarea {
   border-radius: $base-border-radius;
   transition: border-color $base-transition-speed linear;
   appearance: none;
+
   &:hover {
     border-color: darken($base-border-color, 10);
   }
+
   &:focus,
   &:active {
     border-color: $base-accent-color;
     outline: none;
   }
+
   &:disabled {
     cursor: not-allowed;
     opacity: .4;

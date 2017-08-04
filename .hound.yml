@@ -2,5 +2,5 @@ java_script:
   enabled: false
 
 scss:
-  config_file: scss/.scss-lint.yml
+  config_file: .stylelintrc
   enabled: true
